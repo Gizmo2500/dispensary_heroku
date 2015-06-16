@@ -207,7 +207,7 @@ angular.module('starter.controllers', [])
   $http.defaults.headers.post["app_key"] = "514c317ccb2edfd531acaa8b2c220dcd";
   return {
     getStrains: function () {
-      return $http.post('http://data.leafly.com/strains', {
+      return $http.post('//data.leafly.com/strains', {
         "Page":0,
         "Take":50
       })
@@ -224,7 +224,7 @@ angular.module('starter.controllers', [])
         params += "&" + selector + "=true";
       }
 
-      return $http.post('http://data.leafly.com/locations', params);
+      return $http.post('//data.leafly.com/locations', params);
     }
 
   }
